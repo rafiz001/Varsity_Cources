@@ -11,9 +11,10 @@ int main()
     int n = given.length();
     char output[n];
     bool Case[n];
-    for (int i = 0, j = n - 1; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
-
+        int j=(n-1)-i;
+       
         output[j] = given[i];
 
         if ((output[j] >= 'a' && output[j] <= 'z'))
@@ -27,7 +28,7 @@ int main()
             Case[i] = true;
         }
 
-        j--;
+        
     }
 
     for (int i = 0; i < n; i++)
