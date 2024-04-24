@@ -12,7 +12,7 @@ int main(){
     for(int i=0;i<5;i++)
     profitPerUnit[i]=profit[i]/quantity[i];
 
-    for(int i=0;i<5;i++){
+    for(int i=0;i<5;i++){ //buble sort (descending)
         for(int j=0;j<5-1;j++){
             if(profitPerUnit[j]<profitPerUnit[j+1]){
             swap(profitPerUnit[j],profitPerUnit[j+1]);
