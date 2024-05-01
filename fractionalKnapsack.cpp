@@ -8,8 +8,8 @@ int main(){
     int knapsack[5]={0};
     int totalProfit=0;
 
-    float profitPerUnit[n]={0};
-    for(int i=0;i<n;i++)
+    float profitPerUnit[5]={0};
+    for(int i=0;i<5;i++)
     profitPerUnit[i]=(float)profit[i]/quantity[i];
 
     for(int i=0;i<5;i++){ //buble sort (descending)
