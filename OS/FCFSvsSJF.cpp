@@ -33,7 +33,7 @@ float fcfs(properties e[], int n) {
   float avgTAT = totTAT / n;
   float avgWT = totWT / n;
   printf("For FCFS Avg WT= %.2f Avg TAT= %.2f\n", avgWT, avgTAT);
-  return (avgWT + avgTAT) / 2.0;
+  return avgWT ;
 }
 float sjf(properties p[], int n) {
   float total = 0, totWT = 0, totTAT = 0;
@@ -94,7 +94,7 @@ float sjf(properties p[], int n) {
   }
   printf("For SJF Avg WT= %.2f Avg TAT= %.2f\n", avgWT, avgTAT);
 
-  return (avgTAT + avgWT) / 2;
+  return  avgWT;
 }
 int main() {
   int n;
